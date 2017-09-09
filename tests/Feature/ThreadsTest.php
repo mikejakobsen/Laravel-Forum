@@ -21,6 +21,7 @@ class ThreadsTest extends TestCase
         $response->assertSee($thread->body);
     }
 
+    /** @test */
     public function a_user_can_browse_each_thread()
     {
         $thread = factory('App\Thread')->create();
